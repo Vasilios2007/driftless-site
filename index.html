@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Driftless — come back to the present</title>
+<meta name="description" content="A calm, anonymous place to feel more grounded. Gentle peer support and self-management for maladaptive daydreaming." />
+<meta name="theme-color" content="#F7F3EC" />
+<link rel="icon" href="./assets/icon.png" />
+<link rel="apple-touch-icon" href="./assets/icon.png" />
+<meta property="og:title" content="Driftless — come back to the present" />
+<meta property="og:description" content="A calm, anonymous place to feel more grounded." />
+<meta property="og:image" content="./assets/icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Cormorant:ital,wght@1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<!-- ambient motes -->
+<div class="motes" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <svg class="brand-sun" viewBox="0 0 40 40" aria-hidden="true"><use href="#sun-glyph"/></svg>
+    <span>Driftless</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#what">The app</a>
+    <a href="#features">Features</a>
+    <a href="#why">Why it's different</a>
+    <a href="#get">Get it</a>
+  </nav>
+  <a class="btn btn-ghost nav-cta" href="https://vasilios2007.github.io/driftless-web/" target="_blank" rel="noopener">Open the app</a>
+</header>
+
+<!-- ======================= HERO ======================= -->
+<main id="top">
+<section class="hero">
+  <div class="hero-aura" aria-hidden="true">
+    <svg class="hero-sun" viewBox="0 0 400 400" aria-hidden="true">
+      <defs>
+        <radialGradient id="core" cx="50%" cy="46%" r="55%">
+          <stop offset="0%" stop-color="#FFF6DE"/>
+          <stop offset="48%" stop-color="#F7C766"/>
+          <stop offset="82%" stop-color="#E89F45"/>
+          <stop offset="100%" stop-color="#E89F45" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <g class="rays">
+        <g id="ray-set"></g>
+      </g>
+      <circle class="ring" cx="200" cy="200" r="138" fill="none" stroke="#E6A85C" />
+      <circle class="sun-core" cx="200" cy="200" r="132" fill="url(#core)"/>
+    </svg>
+  </div>
+
+  <div class="hero-copy reveal">
+    <div class="eyebrow">peer support · anonymous · calm by design</div>
+    <h1>Come back to <span class="accent">the present.</span></h1>
+    <p class="lede">A quiet, anonymous place for people who live in vivid daydreams — gentle tools to notice your triggers, feel more grounded, and re-engage with real life. <em class="breath">Breathe in. You're already more here.</em></p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#get">
+        <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 3v18l15-9z" fill="currentColor"/></svg>
+        Get Driftless
+      </a>
+      <a class="btn btn-soft" href="https://vasilios2007.github.io/driftless-web/" target="_blank" rel="noopener">Try it in your browser →</a>
+    </div>
+    <div class="trust">
+      <span>✦ Free</span><span>✦ No ads, ever</span><span>✦ No infinite scroll</span><span>✦ Nothing to sign up</span>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#what" aria-label="Scroll down">⌄</a>
+</section>
+
+<!-- ======================= WHAT ======================= -->
+<section class="band" id="what">
+  <div class="section-head reveal">
+    <p class="kicker">A softer kind of app</p>
+    <h2>Most apps want your time. This one wants to hand it back.</h2>
+    <p class="sub">Driftless is built for <strong>maladaptive daydreaming</strong> — but it's for anyone who drifts. Every session is designed to <em>end</em>, so you leave feeling lighter and more here, not pulled deeper in.</p>
+  </div>
+
+  <div class="pillars">
+    <div class="pillar reveal">
+      <div class="pillar-ico" style="--c:var(--gold)">🌅</div>
+      <h3>Land in the present</h3>
+      <p>Open to a breathing sun and a gentle daily affirmation. A 30-second check-in helps you notice where you are — no pressure, no streaks.</p>
+    </div>
+    <div class="pillar reveal">
+      <div class="pillar-ico" style="--c:var(--sage)">🌱</div>
+      <h3>Watch yourself grow</h3>
+      <p>Every grounding win plants something in a calm, living garden. Progress as gentle growth — never a score, never a leaderboard.</p>
+    </div>
+    <div class="pillar reveal">
+      <div class="pillar-ico" style="--c:var(--dusk)">🫂</div>
+      <h3>People who get it</h3>
+      <p>An anonymous community oriented around feelings and coping — not fantasy plots. Supportive-only reactions. No public like-counts.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SHOWCASE ======================= -->
+<section class="showcase">
+  <div class="showcase-glow" aria-hidden="true"></div>
+  <div class="phone reveal">
+    <div class="phone-screen">
+      <div class="status"><span>9:41</span><span>● ●● ▮</span></div>
+      <div class="app">
+        <svg class="app-sun" viewBox="0 0 200 200" aria-hidden="true"><use href="#sun-glyph-lg"/></svg>
+        <div class="app-greet">Good evening</div>
+        <div class="app-affirm">Wherever you drifted, you came back. That's the whole thing.</div>
+        <div class="app-card">
+          <div class="app-h">How grounded do you feel?</div>
+          <div class="app-slider"><i></i></div>
+          <div class="app-scale"><span>Far away</span><span>Right here</span></div>
+        </div>
+        <div class="app-chips"><span>Loneliness</span><span class="on">Bedtime</span><span>Music</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="showcase-copy reveal">
+    <p class="kicker">Calm, on purpose</p>
+    <h2>Designed to feel like walking somewhere warm.</h2>
+    <ul class="ticks">
+      <li>A breathing hearth that guides a slow inhale and exhale</li>
+      <li>A real, soothing dark mode for late nights</li>
+      <li>Soft motion, generous space, nothing that jolts</li>
+      <li>Crisis resources one tap away, from every screen</li>
+    </ul>
+    <a class="btn btn-soft" href="https://vasilios2007.github.io/driftless-web/" target="_blank" rel="noopener">See it live →</a>
+  </div>
+</section>
+
+<!-- ======================= FEATURES ======================= -->
+<section class="band alt" id="features">
+  <div class="section-head reveal">
+    <p class="kicker">What's inside</p>
+    <h2>Small, thoughtful tools — nothing that hooks you.</h2>
+  </div>
+  <div class="grid">
+    <article class="feature reveal"><div class="f-ico" style="--c:var(--gold)">☀️</div><h3>Breathe</h3><p>A radiant sun that breathes with you — a quiet grounding ritual any time you need it.</p></article>
+    <article class="feature reveal"><div class="f-ico" style="--c:var(--sage)">🌿</div><h3>Your garden</h3><p>Wins and intentions grow a living scene that's yours alone. Private, encouraging, never shaming.</p></article>
+    <article class="feature reveal"><div class="f-ico" style="--c:var(--clay)">✍️</div><h3>Structured sharing</h3><p>A gentle composer keeps the community about the human and the experience — feelings, triggers, coping — not the fantasy.</p></article>
+    <article class="feature reveal"><div class="f-ico" style="--c:var(--lilac)">🌙</div><h3>Dream space</h3><p>An opt-in, private corner for the daydreams themselves. Off by default, never in the feed.</p></article>
+    <article class="feature reveal"><div class="f-ico" style="--c:var(--dusk)">🔒</div><h3>Yours, anonymously</h3><p>No real name, no contacts, no location. Minimal data, easy deletion. You're a drifter, not a profile.</p></article>
+    <article class="feature reveal"><div class="f-ico" style="--c:var(--gold)">🧰</div><h3>Grounding toolkit</h3><p>Tiny, one-step-at-a-time actions to come back now, reconnect, prevent the pull, and refocus.</p></article>
+  </div>
+</section>
+
+<!-- ======================= WHY / PHILOSOPHY ======================= -->
+<section class="creed" id="why">
+  <div class="creed-inner reveal">
+    <p class="kicker light">Why it's different</p>
+    <blockquote>“Connection <em>without</em> reinforcement. A community of daydreamers can deepen the habit by glamorizing the fantasy — so here, everything orients to <span class="hl">you</span>, not the plot.”</blockquote>
+    <div class="creed-points">
+      <div><strong>Sessions that end.</strong> Finite feeds reach a visible “you're all caught up.” No autoplay, no bottomless scroll.</div>
+      <div><strong>Gentle, not gamified.</strong> No streak-shaming, no public counts, no leaderboards. Notifications are opt-in and capped at one a day.</div>
+      <div><strong>Safety first.</strong> Peer support — not therapy. Crisis resources are always reachable, surfaced supportively.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= GET IT ======================= -->
+<section class="band" id="get">
+  <div class="section-head reveal">
+    <p class="kicker">Get Driftless</p>
+    <h2>However you want it. Free, on every screen.</h2>
+    <p class="sub">It even works offline once installed.</p>
+  </div>
+  <div class="platforms">
+    <article class="plat featured reveal">
+      <div class="plat-os">🪟</div>
+      <h3>Windows</h3>
+      <p>A real desktop app — proportioned for the big screen. Installs once, runs offline.</p>
+      <a class="btn btn-primary full" id="winDownload" href="https://github.com/Vasilios2007/driftless-web/releases/latest" target="_blank" rel="noopener">Download for Windows</a>
+      <span class="plat-note" id="winNote">.exe installer · 64-bit</span>
+    </article>
+    <article class="plat reveal">
+      <div class="plat-os"></div>
+      <h3>iPhone &amp; Android</h3>
+      <p>Open the web app, then “Add to Home Screen” for a fullscreen app icon that works offline.</p>
+      <a class="btn btn-soft full" href="https://vasilios2007.github.io/driftless-web/" target="_blank" rel="noopener">Open on your phone</a>
+      <span class="plat-note">No app store needed</span>
+    </article>
+    <article class="plat reveal">
+      <div class="plat-os">🌐</div>
+      <h3>Any browser</h3>
+      <p>Nothing to install. Just open it and start — works on any computer or phone.</p>
+      <a class="btn btn-soft full" href="https://vasilios2007.github.io/driftless-web/" target="_blank" rel="noopener">Launch in browser</a>
+      <span class="plat-note">Works everywhere</span>
+    </article>
+  </div>
+</section>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="foot">
+  <div class="foot-disc">
+    <svg class="brand-sun" viewBox="0 0 40 40" aria-hidden="true"><use href="#sun-glyph"/></svg>
+    <p><strong>Driftless is peer support, not professional care.</strong> If you're struggling, talking to a professional can help. In the US, call or text <strong>988</strong> (Suicide &amp; Crisis Lifeline), or find a helpline near you at <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a>.</p>
+  </div>
+  <div class="foot-bar">
+    <span>© Driftless — built calm, on purpose.</span>
+    <span class="foot-links"><a href="#what">The app</a><a href="#get">Get it</a><a href="https://vasilios2007.github.io/driftless-web/" target="_blank" rel="noopener">Open</a></span>
+  </div>
+</footer>
+</main>
+
+<!-- reusable sun glyph -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sun-glyph" viewBox="0 0 40 40">
+    <g fill="#E2A368"><circle cx="20" cy="20" r="9"/>
+      <g id="g40"></g></g>
+  </symbol>
+  <symbol id="sun-glyph-lg" viewBox="0 0 200 200">
+    <defs><radialGradient id="c2" cx="50%" cy="46%" r="55%"><stop offset="0%" stop-color="#FFF6DE"/><stop offset="52%" stop-color="#F7C766"/><stop offset="100%" stop-color="#E89F45"/></radialGradient></defs>
+    <g id="raysLg"></g>
+    <circle cx="100" cy="100" r="46" fill="url(#c2)"/>
+  </symbol>
+</svg>
+
+<script src="./script.js"></script>
+</body>
+</html>
