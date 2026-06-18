@@ -12,9 +12,26 @@ function rays(group, cx, cy, rIn, rOut, count, fill, bw) {
   group.innerHTML = d;
 }
 
-rays(document.getElementById("ray-set"), 200, 200, 152, 188, 16, "#EAA24B", 0.06); // hero
-rays(document.getElementById("g40"), 20, 20, 11, 16, 12, "#E2A368", 0.08);         // nav/footer glyph
-rays(document.getElementById("raysLg"), 100, 100, 54, 74, 12, "#EAA24B", 0.07);    // phone mockup
+// ---- hand-drawn sun rays: uneven strokes, varying length + weight (looks sketched) ----
+function handRays(group, cx, cy, rIn, count, baseLen, color, width) {
+  if (!group) return;
+  let s = "";
+  for (let i = 0; i < count; i++) {
+    const a = (i * Math.PI * 2) / count - Math.PI / 2;
+    const v = Math.sin(i * 2.39) * 0.5 + 0.5;          // 0..1, deterministic
+    const len = baseLen * (0.62 + 0.7 * v);            // uneven ray lengths
+    const w = width * (i % 4 === 0 ? 1.25 : 0.75 + 0.4 * v); // uneven weights
+    const wob = (Math.sin(i * 5.1) * 0.04);            // slight angle wobble
+    const x1 = cx + rIn * Math.cos(a + wob), y1 = cy + rIn * Math.sin(a + wob);
+    const x2 = cx + (rIn + len) * Math.cos(a - wob), y2 = cy + (rIn + len) * Math.sin(a - wob);
+    s += `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${color}" stroke-width="${w.toFixed(1)}" stroke-linecap="round"/>`;
+  }
+  group.innerHTML = s;
+}
+
+handRays(document.getElementById("ray-set"), 200, 200, 122, 15, 44, "#D98A2C", 4);  // hero sun
+handRays(document.getElementById("g40"), 20, 20, 9.5, 9, 4.5, "#D98A2C", 1.9);      // nav/footer logo
+rays(document.getElementById("raysLg"), 100, 100, 54, 74, 12, "#EAA24B", 0.07);     // phone mockup (in-app sun)
 
 // ---- nav background on scroll ----
 const nav = document.getElementById("nav");
