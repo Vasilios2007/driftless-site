@@ -58,14 +58,15 @@ section{position:relative}
 @keyframes rise{0%{transform:translateY(0) translateX(0);opacity:0}10%{opacity:.55}90%{opacity:.5}100%{transform:translateY(-105vh) translateX(28px);opacity:0}}
 
 /* ---------- hero ---------- */
-.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  text-align:center;padding:120px clamp(20px,6vw,40px) 80px;position:relative;
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+  text-align:center;padding:clamp(96px,12vh,140px) clamp(20px,6vw,40px) 64px;position:relative;
   background:
     radial-gradient(120% 90% at 50% -10%, #FFF4DD 0%, #FCE7CD 26%, #F4D9C0 52%, #ECE6D6 74%, var(--paper) 100%);
   overflow:hidden}
-.hero-stage{position:relative;display:grid;place-items:center;width:min(560px,86vw);aspect-ratio:1;margin:4px auto 2px}
-.hero-aura{position:absolute;inset:0;z-index:0;opacity:.97;filter:drop-shadow(0 24px 56px rgba(226,163,104,.4))}
-.hero-sun{width:100%;height:100%}
+.hero-stage{position:relative;display:flex;align-items:center;justify-content:center;
+  width:min(480px,86vw);height:min(480px,86vw);margin:10px auto 2px}
+.hero-aura{position:absolute;inset:0;z-index:0;opacity:.98;filter:drop-shadow(0 22px 48px rgba(226,163,104,.42))}
+.hero-sun{width:100%;height:100%;display:block}
 .hero-sun .rays{transform-origin:200px 200px;animation:spin 60s linear infinite}
 .hero-sun .ring{stroke-width:1.5;opacity:.4}
 .hero-sun .sun-core{transform-origin:200px 200px;animation:breathe 10s ease-in-out infinite}
@@ -74,9 +75,9 @@ section{position:relative}
 .hero-copy{position:relative;z-index:2;max-width:760px;margin-top:0}
 .eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:18px}
 .hero h1{position:relative;z-index:2;font-family:var(--display);font-weight:500;
-  font-size:clamp(30px,5.6vw,58px);line-height:1.06;letter-spacing:-.02em;max-width:84%;color:var(--ink);
-  text-shadow:0 1px 2px rgba(255,248,228,.55)}
-.hero h1 .accent{color:#8f4e1c;font-style:italic;text-shadow:0 1px 2px rgba(255,248,228,.5)}
+  font-size:clamp(26px,4.3vw,50px);line-height:1.12;letter-spacing:-.02em;max-width:78%;color:#3c2a14;
+  text-shadow:0 1px 3px rgba(255,250,236,.7)}
+.hero h1 .accent{color:#7c3f10;font-style:italic}
 .lede{font-size:clamp(17px,2.3vw,21px);color:var(--ink-soft);max-width:600px;margin:26px auto 0}
 .lede .breath{font-family:"Cormorant",serif;font-style:italic;font-size:1.18em;color:var(--gold-deep);display:block;margin-top:10px}
 .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
