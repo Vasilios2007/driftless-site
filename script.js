@@ -29,8 +29,6 @@ function handRays(group, cx, cy, rIn, count, baseLen, color, width) {
   group.innerHTML = s;
 }
 
-handRays(document.getElementById("ray-set"), 200, 200, 122, 15, 44, "#D98A2C", 4);  // hero sun
-handRays(document.getElementById("g40"), 20, 20, 9.5, 9, 4.5, "#D98A2C", 1.9);      // nav/footer logo
 rays(document.getElementById("raysLg"), 100, 100, 54, 74, 12, "#EAA24B", 0.07);     // phone mockup (in-app sun)
 
 // ---- nav background on scroll ----

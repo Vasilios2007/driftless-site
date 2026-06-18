@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Cormorant:ital,wght@1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="./styles.css?v=4" />
+<link rel="stylesheet" href="./styles.css?v=5" />
 </head>
 <body>
 
@@ -42,23 +42,33 @@
       <div class="hero-aura" aria-hidden="true">
         <svg class="hero-sun" viewBox="0 0 400 400" aria-hidden="true">
           <defs>
-            <filter id="rough" x="-25%" y="-25%" width="150%" height="150%">
-              <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="2" seed="6" result="n"/>
-              <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/>
-            </filter>
-            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <radialGradient id="aura" cx="50%" cy="50%" r="50%">
               <stop offset="0%" stop-color="#FFFCEF"/>
-              <stop offset="40%" stop-color="#FCE6A2" stop-opacity="0.9"/>
-              <stop offset="72%" stop-color="#F4C95E" stop-opacity="0.32"/>
+              <stop offset="36%" stop-color="#FCE7A6" stop-opacity="0.85"/>
+              <stop offset="70%" stop-color="#F4C95E" stop-opacity="0.26"/>
               <stop offset="100%" stop-color="#F4C95E" stop-opacity="0"/>
             </radialGradient>
+            <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FFFBEA"/>
+              <stop offset="55%" stop-color="#F6C95E"/>
+              <stop offset="100%" stop-color="#F6C95E" stop-opacity="0"/>
+            </radialGradient>
           </defs>
-          <circle class="sun-core" cx="200" cy="200" r="178" fill="url(#glow)"/>
-          <g class="ink" filter="url(#rough)" fill="none" stroke="#D98A2C" stroke-linecap="round">
-            <circle cx="200" cy="200" r="116" stroke-width="3"/>
-            <circle cx="200" cy="200" r="146" stroke-width="1.2" opacity="0.45"/>
-            <g class="rays" id="ray-set" stroke-width="4"></g>
+          <circle class="sun-core" cx="200" cy="200" r="192" fill="url(#aura)"/>
+          <circle cx="200" cy="200" r="118" fill="none" stroke="#E7B25E" stroke-width="1" opacity="0.32"/>
+          <circle cx="200" cy="200" r="158" fill="none" stroke="#E7B25E" stroke-width="1" opacity="0.2"/>
+          <g class="figure" fill="none" stroke="#9E6F49" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M194 374 L192 388"/>
+            <path d="M206 374 L208 388"/>
+            <path d="M186 308 C180 330 177 352 179 372 L221 372 C223 352 220 330 214 308 Z"/>
+            <path d="M200 308 L200 301"/>
+            <circle cx="200" cy="291" r="10"/>
+            <path d="M191 287 C190 280 210 280 209 287"/>
+            <path d="M188 311 C178 297 185 271 197 261"/>
+            <path d="M212 311 C222 297 215 271 203 261"/>
           </g>
+          <circle class="orb-glow" cx="200" cy="255" r="11" fill="url(#orb)"/>
+          <circle cx="200" cy="255" r="6.5" fill="none" stroke="#C9853F" stroke-width="1.4" opacity="0.75"/>
         </svg>
       </div>
       <h1>Come back to <span class="accent">the present.</span></h1>
@@ -91,10 +101,10 @@
 </footer>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="sun-glyph" viewBox="0 0 40 40"><circle cx="20" cy="20" r="7.5" fill="none" stroke="#D98A2C" stroke-width="2"/><g id="g40"></g></symbol>
+  <symbol id="sun-glyph" viewBox="0 0 40 40"><circle cx="20" cy="20" r="6.5" fill="#E2A368"/><g stroke="#E2A368" stroke-width="2" stroke-linecap="round"><line x1="20" y1="5.5" x2="20" y2="9.5"/><line x1="20" y1="30.5" x2="20" y2="34.5"/><line x1="5.5" y1="20" x2="9.5" y2="20"/><line x1="30.5" y1="20" x2="34.5" y2="20"/><line x1="10.1" y1="10.1" x2="12.9" y2="12.9"/><line x1="27.1" y1="27.1" x2="29.9" y2="29.9"/><line x1="29.9" y1="10.1" x2="27.1" y2="12.9"/><line x1="12.9" y1="27.1" x2="10.1" y2="29.9"/></g></symbol>
   <symbol id="sun-glyph-lg" viewBox="0 0 200 200"><defs><radialGradient id="c2" cx="50%" cy="46%" r="55%"><stop offset="0%" stop-color="#FFF6DE"/><stop offset="52%" stop-color="#F7C766"/><stop offset="100%" stop-color="#E89F45"/></radialGradient></defs><g id="raysLg"></g><circle cx="100" cy="100" r="46" fill="url(#c2)"/></symbol>
 </svg>
 
-<script src="./script.js?v=3"></script>
+<script src="./script.js?v=4"></script>
 </body>
 </html>
