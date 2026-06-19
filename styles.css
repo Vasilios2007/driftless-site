@@ -64,14 +64,19 @@ section{position:relative}
     radial-gradient(120% 90% at 50% -10%, #FFF4DD 0%, #FCE7CD 26%, #F4D9C0 52%, #ECE6D6 74%, var(--paper) 100%);
   overflow:hidden}
 .hero-stage{position:relative;display:flex;align-items:center;justify-content:center;
-  width:min(340px,72vw);margin:18px auto 2px}
-.hero-glow{position:absolute;inset:-26% -34%;z-index:0;
+  width:min(430px,88vw);margin:18px auto 6px}
+.hero-glow{position:absolute;inset:-22% -30%;z-index:0;
   background:radial-gradient(closest-side,#FFF7E0 0%,rgba(252,231,166,.9) 36%,rgba(244,201,94,.18) 64%,rgba(244,201,94,0) 78%)}
 .hero-girl{position:relative;z-index:1;width:100%;height:auto;display:block;
   filter:drop-shadow(0 26px 54px rgba(200,128,31,.32));
   animation:floaty 10s ease-in-out infinite}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @media (prefers-reduced-motion:reduce){.hero-girl{animation:none}}
+.hero-stage .hero-title{position:absolute;z-index:2;left:50%;top:54%;transform:translate(-50%,-50%);
+  width:86%;max-width:none;text-align:center}
+.hero-stage .hero-title::before{content:"";position:absolute;z-index:-1;inset:-40% -24%;
+  background:radial-gradient(closest-side,rgba(255,250,238,.94),rgba(255,250,238,.6) 46%,rgba(255,250,238,0) 80%)}
+.hero-title{text-shadow:0 2px 16px rgba(255,248,232,.96),0 1px 4px rgba(255,248,232,1)}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes breathe{0%,100%{transform:scale(.92);opacity:.9}45%{transform:scale(1.04);opacity:1}}
 .hero-copy{position:relative;z-index:2;max-width:760px;margin-top:0}
