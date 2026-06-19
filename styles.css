@@ -65,13 +65,13 @@ section{position:relative}
   background:url(./assets/hero.jpg) center top/cover no-repeat;transform-origin:32% 36%;
   animation:kenburns 28s ease-in-out infinite alternate}
 .hero::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
-  background:linear-gradient(180deg,rgba(22,12,2,0) 32%,rgba(22,12,2,.16) 60%,rgba(21,11,2,.64) 86%,rgba(20,10,2,.92) 96%,var(--paper) 100%)}
+  background:linear-gradient(180deg,rgba(18,10,1,0) 50%,rgba(18,10,1,.3) 80%,rgba(15,8,1,.78) 95%,var(--paper) 100%)}
 @keyframes kenburns{from{transform:scale(1.02)}to{transform:scale(1.09)}}
 /* glow that makes her pop, gently breathing */
 .hero-bloom{position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:screen;
-  background:radial-gradient(32% 38% at 31% 33%,rgba(255,221,140,.6),rgba(255,197,94,.2) 46%,rgba(255,197,94,0) 72%);
+  background:radial-gradient(26% 32% at 28% 34%,rgba(255,207,138,.5),rgba(255,179,71,.14) 50%,rgba(255,179,71,0) 100%);
   animation:bloom 9s ease-in-out infinite}
-@keyframes bloom{0%,100%{opacity:.5}50%{opacity:.92}}
+@keyframes bloom{0%,100%{opacity:.4}50%{opacity:.8}}
 /* drifting twinkles */
 .hero-sparks{position:absolute;inset:0;z-index:3;pointer-events:none}
 .hero-sparks span{position:absolute;width:3px;height:3px;border-radius:50%;background:#FFE6A8;
@@ -88,14 +88,14 @@ section{position:relative}
 @keyframes twinkle{0%,100%{opacity:0;transform:scale(.6)}50%{opacity:1;transform:scale(1.15)}}
 @media (prefers-reduced-motion:reduce){
   .hero::before{animation:none}.hero-bloom{animation:none;opacity:.7}.hero-sparks span{animation:none;opacity:.6}}
-/* hero over the golden image: clean, cohesive whites with a soft glow */
-.hero .eyebrow{color:rgba(255,251,245,.82);text-shadow:0 1px 10px rgba(22,12,2,.4)}
-.hero h1{color:#FFFDFA;text-shadow:0 2px 18px rgba(22,12,2,.38)}
-.hero h1 .accent{color:#FFF0D8}
-.hero .lede{color:rgba(255,250,243,.9);text-shadow:0 1px 12px rgba(22,12,2,.38)}
+/* hero over the dark image: crisp cohesive whites */
+.hero .eyebrow{color:rgba(255,252,247,.82);text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.hero h1{color:#FFFFFF;text-shadow:0 1px 14px rgba(0,0,0,.42)}
+.hero h1 .accent{color:#FFEFD2}
+.hero .lede{color:rgba(255,252,247,.92);text-shadow:0 1px 10px rgba(0,0,0,.42)}
 .hero .lede .breath{color:#FBEAD0}
-.hero .trust{color:rgba(255,250,243,.84);text-shadow:0 1px 10px rgba(22,12,2,.38)}
-.hero .scroll-cue{color:rgba(255,251,245,.8)}
+.hero .trust{color:rgba(255,252,247,.85);text-shadow:0 1px 8px rgba(0,0,0,.42)}
+.hero .scroll-cue{color:rgba(255,252,247,.8)}
 .hero .btn-soft{background:rgba(255,250,238,.14);border-color:rgba(255,247,232,.34);color:#FFF6E6}
 .hero .btn-soft:hover{background:rgba(255,250,238,.24)}
 /* transparent home nav sits on the dark hero -> light type until scrolled */
