@@ -62,10 +62,10 @@ section{position:relative}
   text-align:center;padding:clamp(120px,16vh,180px) clamp(20px,6vw,40px) clamp(72px,11vh,120px);
   background:#1e1206;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:-2%;z-index:0;
-  background:url(./assets/hero.jpg) center top/cover no-repeat;transform-origin:32% 36%;
-  animation:kenburns 28s ease-in-out infinite alternate}
+  background:url(./assets/hero.jpg) center 42%/cover no-repeat;transform-origin:center 45%;
+  animation:kenburns 30s ease-in-out infinite alternate}
 .hero::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
-  background:linear-gradient(180deg,rgba(16,9,1,0) 46%,rgba(16,9,1,.38) 74%,rgba(13,7,1,.86) 92%,rgba(13,7,1,.9) 97%,var(--paper) 100%)}
+  background:linear-gradient(180deg,rgba(36,18,4,0) 42%,rgba(36,18,4,.26) 72%,rgba(25,13,2,.74) 93%,rgba(22,11,2,.9) 98%,var(--paper) 100%)}
 @keyframes kenburns{from{transform:scale(1.02)}to{transform:scale(1.09)}}
 /* glow that makes her pop, gently breathing */
 .hero-bloom{position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:screen;
@@ -88,14 +88,14 @@ section{position:relative}
 @keyframes twinkle{0%,100%{opacity:0;transform:scale(.6)}50%{opacity:1;transform:scale(1.15)}}
 @media (prefers-reduced-motion:reduce){
   .hero::before{animation:none}.hero-bloom{animation:none;opacity:.7}.hero-sparks span{animation:none;opacity:.6}}
-/* hero over the dark image: luminous warm whites/gold that glow against black */
-.hero .eyebrow{color:#FFE3A6;text-shadow:0 0 12px rgba(255,190,90,.4)}
-.hero h1{color:#FFFFFF;text-shadow:0 0 26px rgba(255,205,115,.5),0 1px 2px rgba(0,0,0,.35)}
-.hero h1 .accent{color:#FFD583;text-shadow:0 0 24px rgba(255,180,80,.55)}
-.hero .lede{color:#FFF7EA;text-shadow:0 0 16px rgba(255,205,115,.32)}
-.hero .lede .breath{color:#FFE3A6}
-.hero .trust{color:#FFEFD6;text-shadow:0 0 12px rgba(255,205,115,.3)}
-.hero .scroll-cue{color:#FFE3A6;text-shadow:0 0 12px rgba(255,190,90,.4)}
+/* hero over the landscape photo: clean white type with a soft shadow */
+.hero .eyebrow{color:rgba(255,244,230,.9);text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.hero h1{color:#FFFFFF;text-shadow:0 2px 16px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.45)}
+.hero h1 .accent{color:#FFE0A8}
+.hero .lede{color:rgba(255,248,238,.95);text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.hero .lede .breath{color:#FFE6BC}
+.hero .trust{color:rgba(255,248,238,.88);text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.hero .scroll-cue{color:rgba(255,244,230,.85);text-shadow:0 1px 8px rgba(0,0,0,.55)}
 .hero .btn-soft{background:rgba(255,250,238,.14);border-color:rgba(255,247,232,.34);color:#FFF6E6}
 .hero .btn-soft:hover{background:rgba(255,250,238,.24)}
 /* transparent home nav sits on the dark hero -> light type until scrolled */
