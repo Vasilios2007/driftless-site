@@ -58,11 +58,32 @@ section{position:relative}
 @keyframes rise{0%{transform:translateY(0) translateX(0);opacity:0}10%{opacity:.55}90%{opacity:.5}100%{transform:translateY(-105vh) translateX(28px);opacity:0}}
 
 /* ---------- hero ---------- */
-.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
-  text-align:center;padding:clamp(96px,12vh,140px) clamp(20px,6vw,40px) 64px;position:relative;
-  background:
-    radial-gradient(120% 90% at 50% -10%, #FFF4DD 0%, #FCE7CD 26%, #F4D9C0 52%, #ECE6D6 74%, var(--paper) 100%);
-  overflow:hidden}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  text-align:center;padding:clamp(120px,16vh,180px) clamp(20px,6vw,40px) clamp(52px,9vh,96px);
+  background:#1e1206;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;
+  background:url(./assets/hero.jpg) center top/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(30,16,4,0) 30%,rgba(30,16,4,.14) 58%,rgba(28,15,4,.6) 84%,rgba(26,14,5,.9) 96%,var(--paper) 100%)}
+/* hero over the golden image: warm cream type */
+.hero .eyebrow{color:#F4D08A}
+.hero h1{color:#FFF6E6;text-shadow:0 2px 26px rgba(18,9,2,.55)}
+.hero h1 .accent{color:#FFD98A}
+.hero .lede{color:#F3E6CE}
+.hero .lede .breath{color:#F6D588}
+.hero .trust{color:rgba(247,238,222,.82)}
+.hero .scroll-cue{color:#F4D08A}
+.hero .btn-soft{background:rgba(255,250,238,.14);border-color:rgba(255,247,232,.34);color:#FFF6E6}
+.hero .btn-soft:hover{background:rgba(255,250,238,.24)}
+/* transparent home nav sits on the dark hero -> light type until scrolled */
+.nav:not(.solid) .brand{color:#FFF8EC}
+.nav:not(.solid) .nav-links{color:rgba(255,248,236,.85)}
+.nav:not(.solid) .nav-links a:hover{color:#fff}
+.nav:not(.solid) .nav-cta{color:#FFF8EC;border-color:rgba(255,248,236,.4)}
+.nav:not(.solid) .nav-cta:hover{background:rgba(255,255,255,.16)}
+.nav:not(.solid).scrolled .brand{color:var(--ink)}
+.nav:not(.solid).scrolled .nav-links{color:var(--ink-soft)}
+.nav:not(.solid).scrolled .nav-cta{color:var(--ink);border-color:var(--line)}
 .hero-stage{position:relative;display:flex;align-items:center;justify-content:center;
   width:min(430px,88vw);margin:18px auto 6px}
 .hero-glow{position:absolute;inset:-22% -30%;z-index:0;
