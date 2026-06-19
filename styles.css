@@ -61,12 +61,12 @@ section{position:relative}
 .hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
   text-align:center;padding:clamp(120px,16vh,180px) clamp(20px,6vw,40px) clamp(72px,11vh,120px);
   background:#1e1206;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:-2%;z-index:0;
-  background:url(./assets/hero.jpg) center 42%/cover no-repeat;transform-origin:center 45%;
-  animation:kenburns 30s ease-in-out infinite alternate}
+.hero::before{content:"";position:absolute;inset:-1.5%;z-index:0;
+  background:url(./assets/hero.jpg) center 46%/cover no-repeat;transform-origin:center 48%;
+  animation:kenburns 32s ease-in-out infinite alternate}
 .hero::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
   background:linear-gradient(180deg,rgba(36,18,4,0) 42%,rgba(36,18,4,.26) 72%,rgba(25,13,2,.74) 93%,rgba(22,11,2,.9) 98%,var(--paper) 100%)}
-@keyframes kenburns{from{transform:scale(1.02)}to{transform:scale(1.09)}}
+@keyframes kenburns{from{transform:scale(1.0)}to{transform:scale(1.055)}}
 /* glow that makes her pop, gently breathing */
 .hero-bloom{position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:screen;
   background:radial-gradient(26% 32% at 28% 34%,rgba(255,207,138,.5),rgba(255,179,71,.14) 50%,rgba(255,179,71,0) 100%);
